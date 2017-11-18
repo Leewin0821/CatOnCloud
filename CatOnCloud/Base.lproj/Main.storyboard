@@ -152,6 +152,17 @@
                                         <constraint firstAttribute="bottom" secondItem="eQS-SN-Kyf" secondAttribute="bottom" id="sw7-br-8e8"/>
                                     </constraints>
                                 </view>
+                                <scrollView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="Awh-G1-k5h">
+                                    <rect key="frame" x="0.0" y="191.33333333333337" width="375" height="132"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2d-co-d1g" customClass="LLCycleScrollView" customModule="LLCycleScrollView">
+                                            <rect key="frame" x="0.0" y="2" width="375" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                </scrollView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeTableViewCell" rowHeight="74" id="Zl1-Vk-p40" customClass="HomeTableViewCell" customModule="CatOnCloud" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="99.333333333333343" width="375" height="74"/>
@@ -213,6 +224,10 @@
                         <viewLayoutGuide key="safeArea" id="jrO-km-EkG"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Cats Nearby" id="ZsR-gU-CTX"/>
+                    <connections>
+                        <outlet property="scrollView" destination="Awh-G1-k5h" id="0XW-fA-5Oz"/>
+                        <outlet property="storyBoardBanner" destination="K2d-co-d1g" id="tO8-GR-wWg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rld-cM-7By" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

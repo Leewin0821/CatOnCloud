@@ -15,8 +15,10 @@
 		B50CDB351F974EF10007F4BD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CDB341F974EF10007F4BD /* LoginViewModel.swift */; };
 		B50CDB371F974F5C0007F4BD /* LoginViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CDB361F974F5C0007F4BD /* LoginViewModelSpec.swift */; };
 		B50CDB3F1F9753640007F4BD /* CatOnCloudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CDB3E1F9753640007F4BD /* CatOnCloudUITests.swift */; };
+		B53F74821FBFFF7300EBACA2 /* BannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53F74811FBFFF7300EBACA2 /* BannerService.swift */; };
+		B53F74841FC02BFB00EBACA2 /* BannerTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53F74831FC02BFB00EBACA2 /* BannerTranslator.swift */; };
+		B53F74861FC0300700EBACA2 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53F74851FC0300700EBACA2 /* ImageModel.swift */; };
 		B55D84F61FA8676500F08FE8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D84F51FA8676500F08FE8 /* R.generated.swift */; };
-		B56EBDEF1FA9BC2B0094AB6F /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EBDEE1FA9BC2B0094AB6F /* MainScreenViewController.swift */; };
 		B56EBDF31FA9C3560094AB6F /* LoginCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EBDF21FA9C3560094AB6F /* LoginCredential.swift */; };
 		B56EBDF51FA9C3760094AB6F /* LoginKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EBDF41FA9C3760094AB6F /* LoginKey.swift */; };
 		B56EBDF71FA9C3990094AB6F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EBDF61FA9C3990094AB6F /* APIError.swift */; };
@@ -70,8 +72,10 @@
 		B50CDB3C1F9753640007F4BD /* CatOnCloudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatOnCloudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50CDB3E1F9753640007F4BD /* CatOnCloudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatOnCloudUITests.swift; sourceTree = "<group>"; };
 		B50CDB401F9753640007F4BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B53F74811FBFFF7300EBACA2 /* BannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerService.swift; sourceTree = "<group>"; };
+		B53F74831FC02BFB00EBACA2 /* BannerTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTranslator.swift; sourceTree = "<group>"; };
+		B53F74851FC0300700EBACA2 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		B55D84F51FA8676500F08FE8 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
-		B56EBDEE1FA9BC2B0094AB6F /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		B56EBDF21FA9C3560094AB6F /* LoginCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredential.swift; sourceTree = "<group>"; };
 		B56EBDF41FA9C3760094AB6F /* LoginKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginKey.swift; sourceTree = "<group>"; };
 		B56EBDF61FA9C3990094AB6F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				B56EBDF81FA9C3E30094AB6F /* LoginService.swift */,
+				B53F74811FBFFF7300EBACA2 /* BannerService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				B56EBDFA1FA9C7450094AB6F /* LoginCredentialTranslator.swift */,
 				B56EBDFC1FA9CBA80094AB6F /* LoginKeyTranslator.swift */,
 				B56EBDFE1FA9CE810094AB6F /* APIErrorTranslator.swift */,
+				B53F74831FC02BFB00EBACA2 /* BannerTranslator.swift */,
 			);
 			path = Translator;
 			sourceTree = "<group>";
@@ -188,6 +194,7 @@
 				B56EBDF21FA9C3560094AB6F /* LoginCredential.swift */,
 				B56EBDF41FA9C3760094AB6F /* LoginKey.swift */,
 				B56EBDF61FA9C3990094AB6F /* APIError.swift */,
+				B53F74851FC0300700EBACA2 /* ImageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,7 +204,6 @@
 			children = (
 				B50CDB241F9747A60007F4BD /* CatViewController.swift */,
 				B5DE859F1F8E0B2A0087608E /* ViewController.swift */,
-				B56EBDEE1FA9BC2B0094AB6F /* MainScreenViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -444,11 +450,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CatOnCloud/Pods-CatOnCloud-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/LLCycleScrollView/LLCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -462,13 +474,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CatOnCloud-CatOnCloudTests/Pods-CatOnCloud-CatOnCloudTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/LLCycleScrollView/LLCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
@@ -537,16 +555,18 @@
 				B50CDB351F974EF10007F4BD /* LoginViewModel.swift in Sources */,
 				B5F138141FA0808A008227E9 /* HomeViewModel.swift in Sources */,
 				B5F138121FA0800B008227E9 /* HomeCellModel.swift in Sources */,
+				B53F74841FC02BFB00EBACA2 /* BannerTranslator.swift in Sources */,
 				B5DE85A01F8E0B2A0087608E /* ViewController.swift in Sources */,
 				B56EBDF91FA9C3E30094AB6F /* LoginService.swift in Sources */,
 				B56EBDF51FA9C3760094AB6F /* LoginKey.swift in Sources */,
 				B56EBDFB1FA9C7450094AB6F /* LoginCredentialTranslator.swift in Sources */,
+				B53F74821FBFFF7300EBACA2 /* BannerService.swift in Sources */,
+				B53F74861FC0300700EBACA2 /* ImageModel.swift in Sources */,
 				B56EBDF71FA9C3990094AB6F /* APIError.swift in Sources */,
 				B56EBDFD1FA9CBA80094AB6F /* LoginKeyTranslator.swift in Sources */,
 				B5DE859E1F8E0B2A0087608E /* AppDelegate.swift in Sources */,
 				B5FFA1681FA85AD8009B62C5 /* HomeTableViewCell.swift in Sources */,
 				B55D84F61FA8676500F08FE8 /* R.generated.swift in Sources */,
-				B56EBDEF1FA9BC2B0094AB6F /* MainScreenViewController.swift in Sources */,
 				B50CDB251F9747A60007F4BD /* CatViewController.swift in Sources */,
 				B56EBDFF1FA9CE810094AB6F /* APIErrorTranslator.swift in Sources */,
 				B5F138161FA0821D008227E9 /* HomeCellViewModel.swift in Sources */,
@@ -777,6 +797,8 @@
 				DEVELOPMENT_TEAM = X5NH7XQKAZ;
 				INFOPLIST_FILE = CatOnCloud/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = Leewin.CatOnCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
