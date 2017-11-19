@@ -8,7 +8,9 @@
 
 import Foundation
 
-let cellModel = HomeCellModel(cat: "Tom", message: "Miao miao", timestamp: "20171025")
+let cellModel = HomeCellModel(
+    cat: "Tom", message: "Miao miao", timestamp: "2017-11-19T05:39:57.837Z"
+)
 
 let mockModels = [cellModel, cellModel]
 

@@ -29,8 +29,19 @@ class HomeCellViewModel {
     }
     
     func getTime() -> String {
-        return "5 minuts later"
+        let dateFormater : DateFormatter = DateFormatter()
+        dateFormater.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        let timeStamp = dateFormater.date(from: model.timestamp)
+        let current = Date()
+        
+        return stringFromTime(fromDate: timeStamp ?? current, endDate: current)
+     
     }
     
+    func stringFromTime(fromDate: Date, endDate: Date) -> String {
+        let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [.minute]
+        return formatter.string(from: fromDate, to: endDate)! + " minutes ago"
+    }
     
 }

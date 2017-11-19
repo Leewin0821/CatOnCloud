@@ -208,6 +208,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		B59CCF391FC15D9E005E1E5F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		B5DE85911F8E0B2A0087608E = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +241,7 @@
 		B5DE859C1F8E0B2A0087608E /* CatOnCloud */ = {
 			isa = PBXGroup;
 			children = (
+				B59CCF391FC15D9E005E1E5F /* Resource */,
 				B53F74801FBC785200EBACA2 /* Controller */,
 				B53F747F1FBC783200EBACA2 /* Model */,
 				B53F747E1FBC77F600EBACA2 /* Translator */,
