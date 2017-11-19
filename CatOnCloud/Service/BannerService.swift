@@ -23,10 +23,10 @@ class BannerService {
         let session = URLSession(configuration: urlSessionConfiguration)
         let task = session.dataTask(with: request) { (data, response, error) in
             if let images = data.flatMap(self.bannerTranslator.translate) {
-                print(images)
+                success(images)
             } else {
                 let err = self.apiErrorTranslator.translate(data: data, error: error)
-                print(err.message)
+                failure(err)
             }
         }
         task.resume()

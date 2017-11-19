@@ -9,5 +9,9 @@
 import Foundation
 
 struct ImageModel {
-    let image: Character
+    let image: String
+    
+    init(image: String) {
+        self.image = image
+    }
 }

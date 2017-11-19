@@ -47,11 +47,13 @@ class HomeViewController: UIViewController {
     }
     
     private func bannerSuccess(images: [String]) {
-        self.storyBoardBanner.imagePaths = images
+        DispatchQueue.main.async(execute: {
+            self.storyBoardBanner.imagePaths = images
+        })
     }
     
     private func bannerFail(error: APIError) {
-        print(error)
+        print(error.message)
     }
     
 
