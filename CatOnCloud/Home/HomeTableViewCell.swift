@@ -12,6 +12,11 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var catName: UILabel!
     @IBOutlet weak var catTime: UILabel!
     @IBOutlet weak var catMessage: UILabel!
+    @IBOutlet weak var catAvatar: UIImageView!
+    @IBOutlet weak var catImageOne: UIImageView!
+    @IBOutlet weak var catImageThree: UIImageView!
+    @IBOutlet weak var catImageTwo: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,5 +32,9 @@ class HomeTableViewCell: UITableViewCell {
         catName.text = cellViewModel.cat
         catTime.text = cellViewModel.time
         catMessage.text = cellViewModel.message
+        catAvatar.image = cellViewModel.avatar
+        catImageOne.image = cellViewModel.catImageOne
+        catImageTwo.image = cellViewModel.catImageTwo
+        catImageThree.image = cellViewModel.catImageThree
     }
 }

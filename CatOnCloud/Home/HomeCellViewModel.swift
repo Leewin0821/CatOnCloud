@@ -28,6 +28,23 @@ class HomeCellViewModel {
         return getTime()
     }
     
+    var avatar: UIImage {
+        return retrieveImage(imageUrl: model.avatar)
+    }
+    
+    var catImageOne: UIImage {
+        return retrieveImage(imageUrl: model.catImageOne)
+    }
+    
+    var catImageTwo: UIImage {
+        return retrieveImage(imageUrl: model.catImageTwo)
+    }
+    
+    var catImageThree: UIImage {
+        return retrieveImage(imageUrl: model.catImageThree)
+    }
+    
+    
     func getTime() -> String {
         let dateFormater : DateFormatter = DateFormatter()
         dateFormater.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
@@ -42,6 +59,16 @@ class HomeCellViewModel {
         let formatter = DateComponentsFormatter()
         formatter.allowedUnits = [.minute]
         return formatter.string(from: fromDate, to: endDate)! + " minutes ago"
+    }
+    
+    func retrieveImage( imageUrl: String) -> UIImage {
+        if imageUrl.isEmpty {
+            return UIImage()
+        }
+        return NSURL(string: imageUrl)
+            .flatMap { $0 }
+            .flatMap { NSData(contentsOf: $0 as URL) }
+            .flatMap { UIImage(data: $0 as Data)}!
     }
     
 }

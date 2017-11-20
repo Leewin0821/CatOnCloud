@@ -12,4 +12,8 @@ struct HomeCellModel {
     var cat: String
     var message: String
     var timestamp: String
+    var avatar: String
+    var catImageOne: String
+    var catImageTwo: String
+    var catImageThree: String
 }

@@ -26,6 +26,14 @@
 		B56EBDFB1FA9C7450094AB6F /* LoginCredentialTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EBDFA1FA9C7450094AB6F /* LoginCredentialTranslator.swift */; };
 		B56EBDFD1FA9CBA80094AB6F /* LoginKeyTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EBDFC1FA9CBA80094AB6F /* LoginKeyTranslator.swift */; };
 		B56EBDFF1FA9CE810094AB6F /* APIErrorTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EBDFE1FA9CE810094AB6F /* APIErrorTranslator.swift */; };
+		B5DE45C11FC1C7CC00BBA536 /* thumb1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5DE45BD1FC1C7CC00BBA536 /* thumb1.jpg */; };
+		B5DE45C21FC1C7CC00BBA536 /* thumb3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5DE45BE1FC1C7CC00BBA536 /* thumb3.jpg */; };
+		B5DE45C31FC1C7CC00BBA536 /* avatar1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5DE45BF1FC1C7CC00BBA536 /* avatar1.jpg */; };
+		B5DE45C41FC1C7CC00BBA536 /* thumb2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5DE45C01FC1C7CC00BBA536 /* thumb2.jpg */; };
+		B5DE45C81FC1D65F00BBA536 /* MomentImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE45C71FC1D65F00BBA536 /* MomentImageCell.swift */; };
+		B5DE45CA1FC3023000BBA536 /* MomentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE45C91FC3023000BBA536 /* MomentService.swift */; };
+		B5DE45CC1FC3040100BBA536 /* MomentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE45CB1FC3040100BBA536 /* MomentModel.swift */; };
+		B5DE45CE1FC3046B00BBA536 /* MomentTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE45CD1FC3046B00BBA536 /* MomentTranslator.swift */; };
 		B5DE859E1F8E0B2A0087608E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE859D1F8E0B2A0087608E /* AppDelegate.swift */; };
 		B5DE85A01F8E0B2A0087608E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE859F1F8E0B2A0087608E /* ViewController.swift */; };
 		B5DE85A31F8E0B2A0087608E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DE85A11F8E0B2A0087608E /* Main.storyboard */; };
@@ -83,6 +91,14 @@
 		B56EBDFA1FA9C7450094AB6F /* LoginCredentialTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentialTranslator.swift; sourceTree = "<group>"; };
 		B56EBDFC1FA9CBA80094AB6F /* LoginKeyTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginKeyTranslator.swift; sourceTree = "<group>"; };
 		B56EBDFE1FA9CE810094AB6F /* APIErrorTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTranslator.swift; sourceTree = "<group>"; };
+		B5DE45BD1FC1C7CC00BBA536 /* thumb1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb1.jpg; sourceTree = "<group>"; };
+		B5DE45BE1FC1C7CC00BBA536 /* thumb3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb3.jpg; sourceTree = "<group>"; };
+		B5DE45BF1FC1C7CC00BBA536 /* avatar1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar1.jpg; sourceTree = "<group>"; };
+		B5DE45C01FC1C7CC00BBA536 /* thumb2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb2.jpg; sourceTree = "<group>"; };
+		B5DE45C71FC1D65F00BBA536 /* MomentImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentImageCell.swift; sourceTree = "<group>"; };
+		B5DE45C91FC3023000BBA536 /* MomentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentService.swift; sourceTree = "<group>"; };
+		B5DE45CB1FC3040100BBA536 /* MomentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentModel.swift; sourceTree = "<group>"; };
+		B5DE45CD1FC3046B00BBA536 /* MomentTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentTranslator.swift; sourceTree = "<group>"; };
 		B5DE859A1F8E0B2A0087608E /* CatOnCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatOnCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DE859D1F8E0B2A0087608E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5DE859F1F8E0B2A0087608E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +188,7 @@
 			children = (
 				B56EBDF81FA9C3E30094AB6F /* LoginService.swift */,
 				B53F74811FBFFF7300EBACA2 /* BannerService.swift */,
+				B5DE45C91FC3023000BBA536 /* MomentService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -183,6 +200,7 @@
 				B56EBDFC1FA9CBA80094AB6F /* LoginKeyTranslator.swift */,
 				B56EBDFE1FA9CE810094AB6F /* APIErrorTranslator.swift */,
 				B53F74831FC02BFB00EBACA2 /* BannerTranslator.swift */,
+				B5DE45CD1FC3046B00BBA536 /* MomentTranslator.swift */,
 			);
 			path = Translator;
 			sourceTree = "<group>";
@@ -195,6 +213,7 @@
 				B56EBDF41FA9C3760094AB6F /* LoginKey.swift */,
 				B56EBDF61FA9C3990094AB6F /* APIError.swift */,
 				B53F74851FC0300700EBACA2 /* ImageModel.swift */,
+				B5DE45CB1FC3040100BBA536 /* MomentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,6 +230,10 @@
 		B59CCF391FC15D9E005E1E5F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B5DE45BF1FC1C7CC00BBA536 /* avatar1.jpg */,
+				B5DE45BD1FC1C7CC00BBA536 /* thumb1.jpg */,
+				B5DE45C01FC1C7CC00BBA536 /* thumb2.jpg */,
+				B5DE45BE1FC1C7CC00BBA536 /* thumb3.jpg */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -263,6 +286,7 @@
 				B5F1380E1FA07F2B008227E9 /* HomeViewController.swift */,
 				B5F138131FA0808A008227E9 /* HomeViewModel.swift */,
 				B5FFA1671FA85AD8009B62C5 /* HomeTableViewCell.swift */,
+				B5DE45C71FC1D65F00BBA536 /* MomentImageCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -395,8 +419,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DE45C21FC1C7CC00BBA536 /* thumb3.jpg in Resources */,
 				B5DE85A51F8E0B2A0087608E /* Assets.xcassets in Resources */,
+				B5DE45C11FC1C7CC00BBA536 /* thumb1.jpg in Resources */,
+				B5DE45C41FC1C7CC00BBA536 /* thumb2.jpg in Resources */,
 				B5DE85A31F8E0B2A0087608E /* Main.storyboard in Resources */,
+				B5DE45C31FC1C7CC00BBA536 /* avatar1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +488,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CatOnCloud/Pods-CatOnCloud-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LLCycleScrollView/LLCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -467,6 +496,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -484,6 +514,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CatOnCloud-CatOnCloudTests/Pods-CatOnCloud-CatOnCloudTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LLCycleScrollView/LLCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
@@ -493,6 +524,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
@@ -560,20 +592,24 @@
 			files = (
 				B56EBDF31FA9C3560094AB6F /* LoginCredential.swift in Sources */,
 				B5F1380F1FA07F2B008227E9 /* HomeViewController.swift in Sources */,
+				B5DE45CC1FC3040100BBA536 /* MomentModel.swift in Sources */,
 				B50CDB351F974EF10007F4BD /* LoginViewModel.swift in Sources */,
 				B5F138141FA0808A008227E9 /* HomeViewModel.swift in Sources */,
+				B5DE45C81FC1D65F00BBA536 /* MomentImageCell.swift in Sources */,
 				B5F138121FA0800B008227E9 /* HomeCellModel.swift in Sources */,
 				B53F74841FC02BFB00EBACA2 /* BannerTranslator.swift in Sources */,
 				B5DE85A01F8E0B2A0087608E /* ViewController.swift in Sources */,
 				B56EBDF91FA9C3E30094AB6F /* LoginService.swift in Sources */,
 				B56EBDF51FA9C3760094AB6F /* LoginKey.swift in Sources */,
 				B56EBDFB1FA9C7450094AB6F /* LoginCredentialTranslator.swift in Sources */,
+				B5DE45CA1FC3023000BBA536 /* MomentService.swift in Sources */,
 				B53F74821FBFFF7300EBACA2 /* BannerService.swift in Sources */,
 				B53F74861FC0300700EBACA2 /* ImageModel.swift in Sources */,
 				B56EBDF71FA9C3990094AB6F /* APIError.swift in Sources */,
 				B56EBDFD1FA9CBA80094AB6F /* LoginKeyTranslator.swift in Sources */,
 				B5DE859E1F8E0B2A0087608E /* AppDelegate.swift in Sources */,
 				B5FFA1681FA85AD8009B62C5 /* HomeTableViewCell.swift in Sources */,
+				B5DE45CE1FC3046B00BBA536 /* MomentTranslator.swift in Sources */,
 				B55D84F61FA8676500F08FE8 /* R.generated.swift in Sources */,
 				B50CDB251F9747A60007F4BD /* CatViewController.swift in Sources */,
 				B56EBDFF1FA9CE810094AB6F /* APIErrorTranslator.swift in Sources */,

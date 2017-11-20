@@ -7,11 +7,21 @@
 //
 
 import Foundation
+import ObjectMapper
 
-struct ImageModel {
-    let image: String
+struct ImageModel: Mappable {
+    var image: String
     
     init(image: String) {
         self.image = image
     }
+    
+    init(map: Map) {
+        self.image = ""
+    }
+    
+    mutating func mapping(map: Map) {
+        image     <- map["image"]
+    }
+    
 }
