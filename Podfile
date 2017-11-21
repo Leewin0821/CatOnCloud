@@ -8,6 +8,7 @@ target 'CatOnCloud' do
     pod 'LLCycleScrollView'
     pod 'SwiftyJSON'
     pod 'ObjectMapper', '~> 2.2'
+    pod 'Cache'
 
     target 'CatOnCloudTests' do
         pod 'Quick', '~> 1.2.0'

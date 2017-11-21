@@ -26,7 +26,7 @@
 		B56EBDFD1FA9CBA80094AB6F /* LoginKeyTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EBDFC1FA9CBA80094AB6F /* LoginKeyTranslator.swift */; };
 		B56EBDFF1FA9CE810094AB6F /* APIErrorTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EBDFE1FA9CE810094AB6F /* APIErrorTranslator.swift */; };
 		B5D327291FC3CF3D0023C68D /* MyCatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D327281FC3CF3D0023C68D /* MyCatController.swift */; };
-		B5D3272D1FC3E2610023C68D /* noCatBgImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D3272C1FC3E2610023C68D /* noCatBgImage.png */; };
+		B5D3272F1FC3F4780023C68D /* noCatBgImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D3272E1FC3F4780023C68D /* noCatBgImage.png */; };
 		B5DE45CA1FC3023000BBA536 /* MomentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE45C91FC3023000BBA536 /* MomentService.swift */; };
 		B5DE45CC1FC3040100BBA536 /* MomentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE45CB1FC3040100BBA536 /* MomentModel.swift */; };
 		B5DE45CE1FC3046B00BBA536 /* MomentTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE45CD1FC3046B00BBA536 /* MomentTranslator.swift */; };
@@ -87,7 +87,7 @@
 		B56EBDFC1FA9CBA80094AB6F /* LoginKeyTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginKeyTranslator.swift; sourceTree = "<group>"; };
 		B56EBDFE1FA9CE810094AB6F /* APIErrorTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTranslator.swift; sourceTree = "<group>"; };
 		B5D327281FC3CF3D0023C68D /* MyCatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCatController.swift; sourceTree = "<group>"; };
-		B5D3272C1FC3E2610023C68D /* noCatBgImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noCatBgImage.png; path = ../../../../../../Downloads/noCatBgImage.png; sourceTree = "<group>"; };
+		B5D3272E1FC3F4780023C68D /* noCatBgImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noCatBgImage.png; sourceTree = "<group>"; };
 		B5DE45C91FC3023000BBA536 /* MomentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentService.swift; sourceTree = "<group>"; };
 		B5DE45CB1FC3040100BBA536 /* MomentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentModel.swift; sourceTree = "<group>"; };
 		B5DE45CD1FC3046B00BBA536 /* MomentTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentTranslator.swift; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 		B5D3272B1FC3E22F0023C68D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B5D3272C1FC3E2610023C68D /* noCatBgImage.png */,
+				B5D3272E1FC3F4780023C68D /* noCatBgImage.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -417,7 +417,7 @@
 			files = (
 				B5DE85A51F8E0B2A0087608E /* Assets.xcassets in Resources */,
 				B5DE85A31F8E0B2A0087608E /* Main.storyboard in Resources */,
-				B5D3272D1FC3E2610023C68D /* noCatBgImage.png in Resources */,
+				B5D3272F1FC3F4780023C68D /* noCatBgImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +479,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CatOnCloud/Pods-CatOnCloud-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LLCycleScrollView/LLCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -487,6 +488,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -505,6 +507,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CatOnCloud-CatOnCloudTests/Pods-CatOnCloud-CatOnCloudTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LLCycleScrollView/LLCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -515,6 +518,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
