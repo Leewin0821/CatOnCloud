@@ -19,9 +19,5 @@ class MomentTranslator {
         } else {
             return []
         }
-        
-//        for (_, value) in dict {
-//            images.append("http://localhost:8080/catnip" + value["image"].stringValue)
-//        }
     }
 }
