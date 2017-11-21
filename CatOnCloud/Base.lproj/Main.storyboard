@@ -98,27 +98,70 @@
         <!--My Cat-->
         <scene sceneID="Rlt-cl-qku">
             <objects>
-                <viewController id="sac-ua-JzD" userLabel="My Cat" sceneMemberID="viewController">
+                <viewController id="sac-ua-JzD" userLabel="My Cat" customClass="MyCatController" customModule="CatOnCloud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T3d-ML-Ez4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1p-JF-AtU">
-                                <rect key="frame" x="166" y="269" width="44" height="21"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8q-CI-IDd">
+                                <rect key="frame" x="0.0" y="44" width="375" height="255"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TtP-rU-wQr" customClass="LLCycleScrollView" customModule="LLCycleScrollView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="255"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TtP-rU-wQr" firstAttribute="leading" secondItem="q8q-CI-IDd" secondAttribute="leading" id="77r-m5-ydX"/>
+                                    <constraint firstAttribute="trailing" secondItem="TtP-rU-wQr" secondAttribute="trailing" id="CMO-DF-DCO"/>
+                                    <constraint firstItem="TtP-rU-wQr" firstAttribute="centerX" secondItem="q8q-CI-IDd" secondAttribute="centerX" id="YGE-ar-qwY"/>
+                                    <constraint firstItem="TtP-rU-wQr" firstAttribute="top" secondItem="q8q-CI-IDd" secondAttribute="top" id="cSA-Hn-lNP"/>
+                                    <constraint firstAttribute="bottom" secondItem="TtP-rU-wQr" secondAttribute="bottom" id="sjl-9z-BsO"/>
+                                    <constraint firstItem="TtP-rU-wQr" firstAttribute="centerY" secondItem="q8q-CI-IDd" secondAttribute="centerY" id="zhi-bV-ht5"/>
+                                </constraints>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noCatBgImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="0NE-jc-86Z">
+                                <rect key="frame" x="0.0" y="632" width="375" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="myCatInfo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dl-0j-kqI">
+                                <rect key="frame" x="73" y="395" width="229" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" name="Greyish"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="helpText" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpT-N2-spv">
+                                <rect key="frame" x="16" y="440" width="343" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="Greyish"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="0NE-jc-86Z" firstAttribute="top" secondItem="q8q-CI-IDd" secondAttribute="bottom" constant="333" id="6Qd-TM-BeV"/>
+                            <constraint firstItem="0NE-jc-86Z" firstAttribute="trailing" secondItem="q8q-CI-IDd" secondAttribute="trailing" id="BPN-JO-bWO"/>
+                            <constraint firstItem="f3o-yb-X26" firstAttribute="bottom" secondItem="q8q-CI-IDd" secondAttribute="bottom" constant="430" id="Kdf-aw-k50"/>
+                            <constraint firstAttribute="trailing" secondItem="q8q-CI-IDd" secondAttribute="trailing" id="Xxk-Au-8Ga"/>
+                            <constraint firstItem="q8q-CI-IDd" firstAttribute="leading" secondItem="T3d-ML-Ez4" secondAttribute="leading" id="dpb-O4-NVT"/>
+                            <constraint firstItem="0NE-jc-86Z" firstAttribute="bottom" secondItem="f3o-yb-X26" secondAttribute="bottom" constant="3" id="eLp-zR-sDu"/>
+                            <constraint firstItem="0NE-jc-86Z" firstAttribute="leading" secondItem="q8q-CI-IDd" secondAttribute="leading" id="ttn-P5-Lax"/>
+                            <constraint firstItem="q8q-CI-IDd" firstAttribute="top" secondItem="f3o-yb-X26" secondAttribute="top" id="xh8-Mk-ghu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="f3o-yb-X26"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Cat" id="5bX-sp-6fP" userLabel="My Cat"/>
+                    <connections>
+                        <outlet property="myCatHelpText" destination="dpT-N2-spv" id="eWo-Hu-w2t"/>
+                        <outlet property="myCatInfoText" destination="3dl-0j-kqI" id="ALh-Qk-rha"/>
+                        <outlet property="noCatImage" destination="0NE-jc-86Z" id="l1g-fN-8Yi"/>
+                        <outlet property="storyBoardBanner" destination="TtP-rU-wQr" id="xYP-8F-Hoq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fnl-Wt-ioA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="570" y="1205"/>
+            <point key="canvasLocation" x="568.79999999999995" y="1204.4334975369459"/>
         </scene>
         <!--Cats Nearby-->
         <scene sceneID="ncX-Tp-8CJ">
@@ -137,7 +180,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2d-co-d1g" customClass="LLCycleScrollView" customModule="LLCycleScrollView">
-                                            <rect key="frame" x="0.0" y="2" width="375" height="245"/>
+                                            <rect key="frame" x="0.0" y="2" width="375" height="255"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
@@ -233,7 +276,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" name="background"/>
                         <viewLayoutGuide key="safeArea" id="jrO-km-EkG"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Cats Nearby" id="ZsR-gU-CTX"/>
@@ -267,6 +310,13 @@
     </scenes>
     <resources>
         <image name="login_head" width="231" height="53"/>
+        <image name="noCatBgImage.png" width="375" height="100"/>
+        <namedColor name="Greyish">
+            <color red="0.6705882352941176" green="0.65098039215686276" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background">
+            <color red="0.95686274509803926" green="0.96078431372549022" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="background">
             <color red="0.95686274509803926" green="0.96078431372549022" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

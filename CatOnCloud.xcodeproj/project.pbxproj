@@ -25,6 +25,8 @@
 		B56EBDFB1FA9C7450094AB6F /* LoginCredentialTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EBDFA1FA9C7450094AB6F /* LoginCredentialTranslator.swift */; };
 		B56EBDFD1FA9CBA80094AB6F /* LoginKeyTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EBDFC1FA9CBA80094AB6F /* LoginKeyTranslator.swift */; };
 		B56EBDFF1FA9CE810094AB6F /* APIErrorTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EBDFE1FA9CE810094AB6F /* APIErrorTranslator.swift */; };
+		B5D327291FC3CF3D0023C68D /* MyCatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D327281FC3CF3D0023C68D /* MyCatController.swift */; };
+		B5D3272D1FC3E2610023C68D /* noCatBgImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D3272C1FC3E2610023C68D /* noCatBgImage.png */; };
 		B5DE45CA1FC3023000BBA536 /* MomentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE45C91FC3023000BBA536 /* MomentService.swift */; };
 		B5DE45CC1FC3040100BBA536 /* MomentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE45CB1FC3040100BBA536 /* MomentModel.swift */; };
 		B5DE45CE1FC3046B00BBA536 /* MomentTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE45CD1FC3046B00BBA536 /* MomentTranslator.swift */; };
@@ -84,6 +86,8 @@
 		B56EBDFA1FA9C7450094AB6F /* LoginCredentialTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentialTranslator.swift; sourceTree = "<group>"; };
 		B56EBDFC1FA9CBA80094AB6F /* LoginKeyTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginKeyTranslator.swift; sourceTree = "<group>"; };
 		B56EBDFE1FA9CE810094AB6F /* APIErrorTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTranslator.swift; sourceTree = "<group>"; };
+		B5D327281FC3CF3D0023C68D /* MyCatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCatController.swift; sourceTree = "<group>"; };
+		B5D3272C1FC3E2610023C68D /* noCatBgImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noCatBgImage.png; path = ../../../../../../Downloads/noCatBgImage.png; sourceTree = "<group>"; };
 		B5DE45C91FC3023000BBA536 /* MomentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentService.swift; sourceTree = "<group>"; };
 		B5DE45CB1FC3040100BBA536 /* MomentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentModel.swift; sourceTree = "<group>"; };
 		B5DE45CD1FC3046B00BBA536 /* MomentTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentTranslator.swift; sourceTree = "<group>"; };
@@ -214,6 +218,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		B5D327271FC3CF0D0023C68D /* MyCat */ = {
+			isa = PBXGroup;
+			children = (
+				B5D327281FC3CF3D0023C68D /* MyCatController.swift */,
+			);
+			path = MyCat;
+			sourceTree = "<group>";
+		};
+		B5D3272B1FC3E22F0023C68D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3272C1FC3E2610023C68D /* noCatBgImage.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B5DE85911F8E0B2A0087608E = {
 			isa = PBXGroup;
 			children = (
@@ -240,11 +260,13 @@
 		B5DE859C1F8E0B2A0087608E /* CatOnCloud */ = {
 			isa = PBXGroup;
 			children = (
+				B5D3272B1FC3E22F0023C68D /* Resources */,
 				B53F74801FBC785200EBACA2 /* Controller */,
 				B53F747F1FBC783200EBACA2 /* Model */,
 				B53F747E1FBC77F600EBACA2 /* Translator */,
 				B53F747D1FBC77B400EBACA2 /* Service */,
 				B5F138101FA07FEE008227E9 /* Home */,
+				B5D327271FC3CF0D0023C68D /* MyCat */,
 				B5DE859D1F8E0B2A0087608E /* AppDelegate.swift */,
 				B5DE85A41F8E0B2A0087608E /* Assets.xcassets */,
 				B5DE85A91F8E0B2A0087608E /* Info.plist */,
@@ -395,6 +417,7 @@
 			files = (
 				B5DE85A51F8E0B2A0087608E /* Assets.xcassets in Resources */,
 				B5DE85A31F8E0B2A0087608E /* Main.storyboard in Resources */,
+				B5D3272D1FC3E2610023C68D /* noCatBgImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +601,7 @@
 				B56EBDFD1FA9CBA80094AB6F /* LoginKeyTranslator.swift in Sources */,
 				B5DE859E1F8E0B2A0087608E /* AppDelegate.swift in Sources */,
 				B5FFA1681FA85AD8009B62C5 /* HomeTableViewCell.swift in Sources */,
+				B5D327291FC3CF3D0023C68D /* MyCatController.swift in Sources */,
 				B5DE45CE1FC3046B00BBA536 /* MomentTranslator.swift in Sources */,
 				B55D84F61FA8676500F08FE8 /* R.generated.swift in Sources */,
 				B56EBDFF1FA9CE810094AB6F /* APIErrorTranslator.swift in Sources */,
